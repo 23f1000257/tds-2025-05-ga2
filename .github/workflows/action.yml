@@ -1,12 +1,11 @@
-name: action
-
 on: push
 
 jobs:
-test:
-  name: test the workflow
-  runs-on: ubuntu-latest
-    steps:
-    - name: 23f1000257@ds.study.iitm.ac.in
-      run: echo "Hello, world!"
-      
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-22.04
+    
+      steps: | # shell
+      - name: 23f1000257@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+        
